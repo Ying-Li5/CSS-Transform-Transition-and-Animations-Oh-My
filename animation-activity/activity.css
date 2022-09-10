@@ -6,6 +6,7 @@
 }
 
 .hamburger:hover > div:nth-child(2){
+  background-color: mediumvioletred;
   animation-name: middle;
   animation-duration: .1s;
   animation-fill-mode: forwards;
@@ -27,17 +28,13 @@ nav {
   opacity: 1;
 }
 
-@keyframes top {
-  from {}
-  to {}
-}
 
-@keyframes middle {
-  from {}
-  to {}
+@keyframes top {
+  from {transform: rotate(0deg); position: relative; top: 0px;}
+  to {transform: rotate(45deg); position: relative; top: 34px;}
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  from {transform: rotate(0deg); position: relative; top: 0px;}
+  to {transform: rotate(-45deg); position: relative; top: -34px;}
 }
